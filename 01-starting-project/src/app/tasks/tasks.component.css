@@ -1,0 +1,64 @@
+#tasks {
+  padding: 2rem; /* Padding remains the same */
+  border-radius: 7px; /* Border-radius remains the same */
+  width: 450px; /* Increased width */
+  height: 600px; /* Increased height */
+  overflow: auto; /* Allows scrolling if content overflows */
+  background-color: #245083;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem; /* Adjusted margin to fit fixed size */
+  gap: 1rem; /* Adjusted gap for consistent spacing */
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.1rem; /* Font-size remains the same */
+  width: 100%; /* Ensures h2 uses full width of the container */
+  text-wrap: balance; /* Ensures text wrapping */
+}
+
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+menu button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #04a8e9;
+  border-radius: 5px; /* Border-radius remains the same */
+  border: none;
+  padding: 0.5rem 1rem; /* Padding remains the same */
+  font-size: 1rem; /* Font-size remains the same */
+}
+
+menu button:hover,
+menu button:active {
+  background-color: #0393d8; /* Hover color remains the same */
+}
+
+ul {
+  list-style: none;
+  margin: 2.5rem 0; /* Margin remains the same */
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Adjusted gap for consistent spacing */
+  max-height: calc(100% - 2rem); /* Ensures ul fits within the fixed height of #tasks */
+  overflow: auto; /* Allows scrolling if content overflows */
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.5rem; /* Increased font-size for larger screens */
+  }
+
+  menu {
+    width: auto;
+  }
+}

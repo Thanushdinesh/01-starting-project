@@ -1,0 +1,28 @@
+import { identifierName } from "@angular/compiler";
+
+export const DUMMY_USERS =[
+    {id:'u1',
+        name:'project-1',
+        avatar:'user-1.jpg',
+    },
+    {id:'u2',
+        name:'project-2',
+        avatar:'user-2.jpg',
+    },
+    {id:'u3',
+        name:'project-3',
+        avatar:'user-3.jpg',
+    },
+    {id:'u4',
+        name:'project-4',
+        avatar:'user-4.jpg',
+    },
+    {id:'u5',
+        name:'project-5',
+        avatar:'user-5.jpg',
+    },
+    {id:'u6',
+        name:'project-6',
+        avatar:'user-6.jpg',
+    },
+]

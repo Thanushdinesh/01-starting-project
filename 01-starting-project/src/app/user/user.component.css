@@ -1,0 +1,52 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the content to the left */
+    margin: 0; /* Remove any margin */
+    padding-left: 0; /* Ensure there's no padding on the left */
+    position: absolute; /* Align to the leftmost side of the screen */
+    left: 0; /* Anchor the component to the leftmost part of the screen */
+}
+
+div:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    color: #FFFFFF;  /* White text */
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    min-width: 12rem;
+    text-align: left;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover,
+button:active,
+button.active {
+    background-color: #FF8C00;  /* Dark Orange */
+    color: #FFFFFF;  /* White text */
+    transform: scale(1.05);
+}
+
+img {
+    width: 2.5rem;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+span {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333333;  /* Dark Gray */
+}

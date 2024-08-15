@@ -1,0 +1,52 @@
+<app-header></app-header>
+<main>
+<div class="backdrop" (click)="onCancel()"></div>
+<dialog open>
+  <h2>Add Task</h2>
+  <form (ngSubmit)="onSubmit()">
+    <p>
+        <label for="title">title</label>
+        <input type="text" id="title" name="title" [(ngModel)]="enteredTitle"/>                 
+      </p>
+     
+    <p>
+      <label for="Startdate">Startdate</label>
+      <input type="text" id="Startdate" name="Startdate"  [(ngModel)]="enteredDate"/>                 
+    </p>
+    <p>
+        <label for="due-date">Due Date</label>
+        <input type="date" id="due-date" name="due-date" />
+      </p>
+      <p>
+        <label for="Customer_Section">Customer_Section</label>
+        <input type="text" id="Customer_Section" name="Customer_Section" [(ngModel)]="enteredCustomerSection"/>
+      </p>
+      <p>
+        <label for="Customer_Region">Customer_Region</label>
+        <input type="text" id="Customer_Region" name="Customer_Region" />
+      </p>
+
+    <p>
+      <label for="Project_Milestones">Summary</label>
+      <textarea id="Project_Milestones" rows="3" name="Project_Milestones" ></textarea>
+    </p>
+    <p>
+        <label for="Challenges">Challenges</label>
+        <textarea id="Challenges" rows="3" name="Challenges"></textarea>
+      </p>
+      <p>
+        <label for="Training">Training</label>
+        <textarea
+          id="Training"
+          rows="3"
+          name="Training"
+          [attr.required]="isRequired ? true : null" 
+        ></textarea>
+      </p>
+    <p class="actions">
+      <button type="button" (click)="onCancel()">Cancel</button>
+      <button type="submit">Create</button>
+    </p>
+  </form>
+</dialog>
+</main>

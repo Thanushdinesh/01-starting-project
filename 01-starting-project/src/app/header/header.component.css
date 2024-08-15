@@ -1,0 +1,90 @@
+/* header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    background: linear-gradient(
+      to bottom,
+      #1A4169,
+      #1A4169
+    );
+    padding: 1rem;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+  } */
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* Centers the text content */
+    gap: 1.5rem;
+    width: 100%;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    background: linear-gradient(
+      to bottom,
+      #4d79c7,  /* Light blue */
+      #012e79   /* Dark blue */
+    );
+    padding: 0rem;  /* Reduced padding to decrease header height */
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative; /* Allows the absolute positioning of the image */
+}
+
+header:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+img {
+    width: 10rem;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    position: absolute; /* Positions the image absolutely */
+    left: 1rem; /* Positions the image to the left edge */
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 1.75rem;  /* Adjusted font size for a balanced header */
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    color: #fff;
+}
+
+p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    line-height: 1.5;  /* Adjusted line-height for better text balance */
+}
+
+@media (min-width: 768px) {
+    header {
+      padding: 0.9rem;  /* Slightly increased padding for larger screens */
+    }
+  
+    img {
+      width: 10rem;
+    }
+  
+    h1 {
+      font-size: 2.4rem;  /* Slightly larger font for better readability on bigger screens */
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+}
